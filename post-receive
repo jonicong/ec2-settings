@@ -3,5 +3,7 @@ GIT_WORK_TREE=/home/ec2-user/code/
 export GIT_WORK_TREE
 mkdir -p $GIT_WORK_TREE
 git checkout -f
+
+chdir $GIT_WORK_TREE
 cpanm --notest --local-lib=~/perl5/ --installdeps .
 supervisorctl restart plackup

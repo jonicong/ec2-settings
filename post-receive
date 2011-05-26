@@ -1,0 +1,5 @@
+#!/bin/sh
+GIT_WORK_TREE=/home/ec2-user/code/
+export GIT_WORK_TREE
+git checkout -f
+sudo supervisorctl restart plackup
